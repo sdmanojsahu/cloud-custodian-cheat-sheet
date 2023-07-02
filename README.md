@@ -20,4 +20,22 @@ $ pip install c7n
 $ custodian run --dryrun policy.yml
 ```
 5. **List Affected Resources:**
+```
 $ custodian report --format grid policy.yml -s /tmp
+```
+6. **Complete List of Cloud Resources for Policy Execution
+```
+custodian schema
+```
+7. **Available resources for a specific cloud provider
+```
+custodian schema <cloud-provider>
+```
+8. **Available filters and actions for each resource
+```
+custodian schema <cloud-provider>.<resource>
+```
+9. **Exploring Policy Settings for Each Resource
+```
+custodian schema <cloud>.<resource>.<category>.<item>
+```
