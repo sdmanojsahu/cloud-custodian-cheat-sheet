@@ -8,6 +8,16 @@ Cloud Custodian is a powerful open-source tool that helps you manage and automat
 $ pip install c7n
 ```
 2. **Check the Custodian Version:**
+```
    $ custodian version
+```
 3. **Run Custodian Policy on Resources:**
+```
    custodian run policy.yml -s /tmp
+```
+4. **Dry Run a Custodian Policy:**
+```
+$ custodian run --dryrun policy.yml
+```
+5. **List Affected Resources:**
+$ custodian report --format grid policy.yml -s /tmp
